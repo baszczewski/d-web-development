@@ -11,7 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq mariadb-server
 RUN gem install sass compass
 
 # jekyll
-RUN gem install jekyll
+RUN gem install jekyll jekyll-sitemap jekyll-feed
 
 # php
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-cli php7.0-cgi php7.0-gd php7.0-mbstring php7.0-mcrypt php7.0-xsl php7.0-intl libapache2-mod-php7.0
