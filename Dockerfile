@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq apache2
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq mariadb-server
 
 # ruby gems
-RUN gem install sass compass
+RUN gem install sass compass rmagick
 
 # jekyll
 RUN gem install jekyll jekyll-assets jekyll-sitemap jekyll-feed
